@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Gem</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+    <header></header>
+    <main>
+      <!-- main container -->
+      <div class="flex flex-col md:flex-row">
+        <!-- shape card container  -->
+        <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <!-- triangle shape  -->
+          <div class="card card-compact bg-base-100 shadow-xl m-4 border-2">
+            <figure>
+              <img class="py-6 pt-6" src="./images/triangle.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center text-25px font-bold">Triangle</h2>
+              <p class="text-center">Area (A) = 0.5 x b x h</p>
+              <div class="m-2">
+                <input
+                  type="text"
+                  placeholder="b"
+                  class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
+                />
+                <span class="mr-4 ml-2">cm</span>
+                <input
+                  type="text"
+                  placeholder="h"
+                  class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
+                />
+                <span class="ml-2">cm</span>
+              </div>
+              <div class="card-actions">
+                <button onclick="triangleCalc()" class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- rectangle shape -->
+          <div class="card card-compact bg-base-100 shadow-xl m-4 border-2">
+            <figure>
+              <img class="py-9 px-4" src="./images/rectangle.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center text-25px font-bold">Triangle</h2>
+              <p class="text-center">Area (A) = 0.5 x b x h</p>
+              <div class="m-2">
+                <input
+                  type="text"
+                  placeholder="b"
+                  class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
+                />
+                <span class="mr-4 ml-2">cm</span>
+                <input
+                  type="text"
+                  placeholder="h"
+                  class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
+                />
+                <span class="ml-2">cm</span>
+              </div>
+              <div class="card-actions">
+                <button onclick="triangleCalc()" class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- Parallelogram shape -->
+          <div class="card card-compact bg-base-100 shadow-xl m-4 border-2">
+            <figure>
+              <img class="py-10 px-2" src="./images/parallelogram.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center text-25px font-bold">Triangle</h2>
+              <p class="text-center">Area (A) = 0.5 x b x h</p>
+              <div class="m-2">
+                <input
+                  type="text"
+                  placeholder="b"
+                  class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
+                />
+                <span class="mr-4 ml-2">cm</span>
+                <input
+                  type="text"
+                  placeholder="h"
+                  class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
+                />
+                <span class="ml-2">cm</span>
+              </div>
+              <div class="card-actions">
+                <button onclick="triangleCalc()" class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- Rhombus Shape -->
+          <div class="card card-compact bg-base-100 shadow-xl m-4 border-2">
+            <figure>
+              <img class="py-6 pt-6" src="./images/rhombus.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center text-25px font-bold">Triangle</h2>
+              <p class="text-center">Area (A) = 0.5 x b x h</p>
+              <div class="m-2">
+                <input
+                  type="text"
+                  placeholder="b"
+                  class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
+                />
+                <span class="mr-4 ml-2">cm</span>
+                <input
+                  type="text"
+                  placeholder="h"
+                  class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
+                />
+                <span class="ml-2">cm</span>
+              </div>
+              <div class="card-actions">
+                <button onclick="triangleCalc()" class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- Pentagon Shape -->
+          <div class="card card-compact bg-base-100 shadow-xl m-4 border-2">
+            <figure>
+              <img class="py-6 pt-6" src="./images/pentagon.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center text-25px font-bold">Triangle</h2>
+              <p class="text-center">Area (A) = 0.5 x b x h</p>
+              <div class="m-2">
+                <input
+                  type="text"
+                  placeholder="b"
+                  class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
+                />
+                <span class="mr-4 ml-2">cm</span>
+                <input
+                  type="text"
+                  placeholder="h"
+                  class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
+                />
+                <span class="ml-2">cm</span>
+              </div>
+              <div class="card-actions">
+                <button onclick="triangleCalc()" class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- Ellipse Shape -->
+          <div class="card card-compact bg-base-100 shadow-xl m-4 border-2">
+            <figure>
+              <img class="py-6 pt-6" src="./images/ellipse.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="text-center text-25px font-bold">Triangle</h2>
+              <p class="text-center">Area (A) = 0.5 x b x h</p>
+              <div class="m-2">
+                <input
+                  type="text"
+                  placeholder="b"
+                  class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
+                />
+                <span class="mr-4 ml-2">cm</span>
+                <input
+                  type="text"
+                  placeholder="h"
+                  class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
+                />
+                <span class="ml-2">cm</span>
+              </div>
+              <div class="card-actions">
+                <button onclick="triangleCalc()" class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- area calculation calculator  -->
+        <div class="w-96 m-4 border-2 border-gray-700 rounded-md">
+          <h3 class="text-2xl text-center p-3">Area Calculation</h3>
+        </div>
+      </div>
+    </main>
+    <script src="./scripts/triangle-calc.js"></script>
+  </body>
+</html>
