@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,7 +20,7 @@
         <!-- shape card container  -->
         <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <!-- triangle shape  -->
-          <div class="card card-compact bg-base-100 shadow-xl m-4 border-2">
+          <div class="card card-compact bg-base-100 shadow-xl m-4">
             <figure>
               <img class="py-6 pt-6" src="./images/triangle.png" alt="Shoes" />
             </figure>
@@ -29,31 +29,41 @@
               <p class="text-center">Area (A) = 0.5 x b x h</p>
               <div class="m-2">
                 <input
+                  id="triangle-base"
                   type="text"
                   placeholder="b"
                   class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
                 />
                 <span class="mr-4 ml-2">cm</span>
                 <input
+                  id="triangle-height"
                   type="text"
                   placeholder="h"
                   class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
                 />
                 <span class="ml-2">cm</span>
               </div>
+              <div>
+                <p class="text-base">
+                  Area: <span id="triangle-area-span"></span>
+                  <span>cm<sup>2</sup></span>
+                </p>
+              </div>
               <div class="card-actions">
-                <button onclick="triangleCalc()" class="btn btn-primary w-full">Calculate</button>
+                <button onclick="triangleCalc()" class="btn btn-primary w-full">
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
           <!-- rectangle shape -->
-          <div class="card card-compact bg-base-100 shadow-xl m-4 border-2">
+          <div class="card card-compact bg-base-100 shadow-xl m-4">
             <figure>
               <img class="py-9 px-4" src="./images/rectangle.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="text-center text-25px font-bold">Triangle</h2>
-              <p class="text-center">Area (A) = 0.5 x b x h</p>
+              <h2 class="text-center text-25px font-bold">Rectangle</h2>
+              <p class="text-center">Area (A) = W x I</p>
               <div class="m-2">
                 <input
                   type="text"
@@ -69,18 +79,22 @@
                 <span class="ml-2">cm</span>
               </div>
               <div class="card-actions">
-                <button onclick="triangleCalc()" class="btn btn-primary w-full">Calculate</button>
+                <button class="btn btn-primary w-full"></button>
               </div>
             </div>
           </div>
           <!-- Parallelogram shape -->
-          <div class="card card-compact bg-base-100 shadow-xl m-4 border-2">
+          <div class="card card-compact bg-base-100 shadow-xl m-4">
             <figure>
-              <img class="py-10 px-2" src="./images/parallelogram.png" alt="Shoes" />
+              <img
+                class="py-10 px-2"
+                src="./images/parallelogram.png"
+                alt="Shoes"
+              />
             </figure>
             <div class="card-body">
-              <h2 class="text-center text-25px font-bold">Triangle</h2>
-              <p class="text-center">Area (A) = 0.5 x b x h</p>
+              <h2 class="text-center text-25px font-bold">Parallelogram</h2>
+              <p class="text-center">Area (A) = b x h</p>
               <div class="m-2">
                 <input
                   type="text"
@@ -96,18 +110,18 @@
                 <span class="ml-2">cm</span>
               </div>
               <div class="card-actions">
-                <button onclick="triangleCalc()" class="btn btn-primary w-full">Calculate</button>
+                <button class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
           <!-- Rhombus Shape -->
-          <div class="card card-compact bg-base-100 shadow-xl m-4 border-2">
+          <div class="card card-compact bg-base-100 shadow-xl m-4">
             <figure>
               <img class="py-6 pt-6" src="./images/rhombus.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="text-center text-25px font-bold">Triangle</h2>
-              <p class="text-center">Area (A) = 0.5 x b x h</p>
+              <h2 class="text-center text-25px font-bold">Rhombus</h2>
+              <p class="text-center">Area (A) = 0.5 x d1 x d2</p>
               <div class="m-2">
                 <input
                   type="text"
@@ -123,18 +137,18 @@
                 <span class="ml-2">cm</span>
               </div>
               <div class="card-actions">
-                <button onclick="triangleCalc()" class="btn btn-primary w-full">Calculate</button>
+                <button class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
           <!-- Pentagon Shape -->
-          <div class="card card-compact bg-base-100 shadow-xl m-4 border-2">
+          <div class="card card-compact bg-base-100 shadow-xl m-4">
             <figure>
               <img class="py-6 pt-6" src="./images/pentagon.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="text-center text-25px font-bold">Triangle</h2>
-              <p class="text-center">Area (A) = 0.5 x b x h</p>
+              <h2 class="text-center text-25px font-bold">Pentagon</h2>
+              <p class="text-center">Area (A) = 0.5 x p x b</p>
               <div class="m-2">
                 <input
                   type="text"
@@ -150,18 +164,18 @@
                 <span class="ml-2">cm</span>
               </div>
               <div class="card-actions">
-                <button onclick="triangleCalc()" class="btn btn-primary w-full">Calculate</button>
+                <button class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
           <!-- Ellipse Shape -->
-          <div class="card card-compact bg-base-100 shadow-xl m-4 border-2">
+          <div class="card card-compact bg-base-100 shadow-xl m-4">
             <figure>
               <img class="py-6 pt-6" src="./images/ellipse.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="text-center text-25px font-bold">Triangle</h2>
-              <p class="text-center">Area (A) = 0.5 x b x h</p>
+              <h2 class="text-center text-25px font-bold">Ellipse</h2>
+              <p class="text-center">Area (A) = pi x ab</p>
               <div class="m-2">
                 <input
                   type="text"
@@ -177,7 +191,7 @@
                 <span class="ml-2">cm</span>
               </div>
               <div class="card-actions">
-                <button onclick="triangleCalc()" class="btn btn-primary w-full">Calculate</button>
+                <button class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
