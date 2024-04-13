@@ -64,22 +64,37 @@
             <div class="card-body">
               <h2 class="text-center text-25px font-bold">Rectangle</h2>
               <p class="text-center">Area (A) = W x I</p>
+              <!-- rectangle base  -->
               <div class="m-2">
                 <input
                   type="text"
+                  id="rectangle-base"
                   placeholder="b"
                   class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
                 />
+                <!-- rectangle height  -->
                 <span class="mr-4 ml-2">cm</span>
                 <input
+                  id="rectangle-height"
                   type="text"
                   placeholder="h"
                   class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
                 />
                 <span class="ml-2">cm</span>
               </div>
+              <div>
+                <p class="text-base">
+                  Area: <span id="rectangle-area">0</span>
+                  <span>cm<sup>2</sup></span>
+                </p>
+              </div>
               <div class="card-actions">
-                <button class="btn btn-primary w-full"></button>
+                <button
+                  onclick="rectangleCalc()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -202,6 +217,8 @@
         </div>
       </div>
     </main>
+    <!-- scripts  -->
     <script src="./scripts/triangle-calc.js"></script>
+    <script src="./scripts/rectangle-calc.js"></script>
   </body>
 </html>
