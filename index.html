@@ -112,20 +112,33 @@
               <p class="text-center">Area (A) = b x h</p>
               <div class="m-2">
                 <input
+                  id="parallelogram-base"
                   type="text"
-                  placeholder="b"
+                  placeholder="base"
                   class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
                 />
                 <span class="mr-4 ml-2">cm</span>
                 <input
+                  id="parallelogram-height"
                   type="text"
-                  placeholder="h"
+                  placeholder="height"
                   class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
                 />
                 <span class="ml-2">cm</span>
               </div>
+              <div>
+                <p>
+                  Area: <span id="paralleogram-area"></span>
+                  <span>cm<sup>2</sup></span>
+                </p>
+              </div>
               <div class="card-actions">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button
+                  onclick="parallelogramCalc()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -179,7 +192,12 @@
                 <span class="ml-2">cm</span>
               </div>
               <div class="card-actions">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button
+                  onclick="pentagonAreaCalc()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -220,5 +238,7 @@
     <!-- scripts  -->
     <script src="./scripts/triangle-calc.js"></script>
     <script src="./scripts/rectangle-calc.js"></script>
+    <script src="./scripts/parallelogram-calc.js"></script>
+    <script src="./scripts/pentagon-calc.js"></script>
   </body>
 </html>
