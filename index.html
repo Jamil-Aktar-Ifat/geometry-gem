@@ -194,7 +194,10 @@
                 <span class="ml-2">cm</span>
               </div>
               <div>
-                <p>Area: <span id="pentagon-area"></span> <span>cm<sup>2</sup></span></p>
+                <p>
+                  Area: <span id="pentagon-area"></span>
+                  <span>cm<sup>2</sup></span>
+                </p>
               </div>
               <div class="card-actions">
                 <button
@@ -216,20 +219,28 @@
               <p class="text-center">Area (A) = pi x ab</p>
               <div class="m-2">
                 <input
+                  id="ellipse-major"
                   type="text"
                   placeholder="b"
                   class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
                 />
                 <span class="mr-4 ml-2">cm</span>
                 <input
+                  id="ellipse-minor"
                   type="text"
                   placeholder="h"
                   class="w-20 h-8 p-2 bg-slate-200 rounded-sm"
                 />
                 <span class="ml-2">cm</span>
               </div>
+              <p>
+                Area: <span id="ellipse-area"></span>
+                <span>cm<sup>2</sup></span>
+              </p>
               <div class="card-actions">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button onclick="ellipseCalc()" class="btn btn-primary w-full">
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -245,5 +256,6 @@
     <script src="./scripts/rectangle-calc.js"></script>
     <script src="./scripts/parallelogram-calc.js"></script>
     <script src="./scripts/pentagon-calc.js"></script>
+    <script src="./scripts/ellipse-calc.js"></script>
   </body>
 </html>
